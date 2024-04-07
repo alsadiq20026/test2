@@ -11,7 +11,7 @@ const chatrouter = require("./api/routes/chat");
 dotenv.config();
 
 // CONNECT TO DB
-mongoose.connect("process.env.MONGO_URI", { dbName: "Chat" }).then((result) => {
+mongoose.connect(process.env.MONGO_URI, { dbName: "Chat" }).then((result) => {
   console.log("DB CONNECTED");
 });
 
